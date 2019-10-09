@@ -54,3 +54,9 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 
 !ENTRY com.altera.sbtgui.launch 1 0 2019-10-08 22:00:45.774
 !MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-3.3]' --device=1 --instance=0 --tcpport=auto --sidp=0x4002090 --id=0x0 --timestamp=1570581271]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-10-08 22:03:49.771
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-3.3]' --device=1 --instance=0 --stop --sidp=0x4002090 --id=0x0 --timestamp=1570581271]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-10-08 22:03:51.169
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-3.3]' --device=1 --instance=0 --go --sidp=0x4002090 --id=0x0 --timestamp=1570581271 /home/nestor/repositorios/niosII_freeRTOS_DE0_nano/software/FreeRTOS_niosII/FreeRTOS_niosII.elf]
