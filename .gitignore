@@ -50,3 +50,14 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Fpga files
+*.bak
+*.sopcinfo
+*.qws
+
+.qsys_edit/
+db/
+incremental_db/
+niosII/
+output_files/
