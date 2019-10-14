@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Tue Oct  8 21:44:23 2019
+Analysis & Synthesis Status : Successful - Mon Oct 14 19:15:07 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : niosII_freeRTOS_DE0_nano
 Top-level Entity Name : DE0Nano_FreeRTOS
 Family : Cyclone IV E
-Total logic elements : 3,991
-    Total combinational functions : 2,997
+Total logic elements : 3,985
+    Total combinational functions : 2,991
     Dedicated logic registers : 2,582
 Total registers : 2582
 Total pins : 92
