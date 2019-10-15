@@ -54,7 +54,6 @@ dkms.conf
 # Fpga files
 *.bak
 *.sopcinfo
-*.qws
 
 .qsys_edit/
 db/

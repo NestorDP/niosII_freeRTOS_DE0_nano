@@ -1,9 +1,0 @@
-22:03:49 **** Incremental Build of configuration Nios II for project FreeRTOS_niosII ****
-make all 
-Info: Building ../FreeRTOS_niosII_bsp/
-make --no-print-directory -C ../FreeRTOS_niosII_bsp/
-[BSP build complete]
-[FreeRTOS_niosII build complete]
-
-22:03:49 Build Finished (took 163ms)
-
