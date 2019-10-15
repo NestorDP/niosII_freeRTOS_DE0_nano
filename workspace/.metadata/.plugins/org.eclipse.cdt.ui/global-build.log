@@ -28,3 +28,9 @@ Info: Building ../FreeRTOS_niosII_bsp/
 make --no-print-directory -C ../FreeRTOS_niosII_bsp/
 [BSP build complete]
 [FreeRTOS_niosII build complete]
+22:25:16 **** Clean-only build of configuration Nios II for project FreeRTOS_ROS_firmware_bsp ****
+make clean 
+[BSP clean complete]
+22:25:18 **** Clean-only build of configuration Nios II for project FreeRTOS_ROS_firmware ****
+make clean 
+[FreeRTOS_ROS_firmware clean complete]

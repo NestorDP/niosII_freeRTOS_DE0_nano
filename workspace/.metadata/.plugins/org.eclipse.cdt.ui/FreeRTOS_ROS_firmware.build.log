@@ -1,0 +1,6 @@
+22:25:18 **** Clean-only build of configuration Nios II for project FreeRTOS_ROS_firmware ****
+make clean 
+[FreeRTOS_ROS_firmware clean complete]
+
+22:25:18 Build Finished (took 77ms)
+
