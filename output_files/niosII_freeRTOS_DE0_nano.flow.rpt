@@ -1,5 +1,5 @@
 Flow report for niosII_freeRTOS_DE0_nano
-Mon Oct 14 19:15:57 2019
+Mon Oct 14 22:08:55 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Oct 14 19:15:50 2019       ;
+; Flow Status                        ; Successful - Mon Oct 14 22:08:49 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; niosII_freeRTOS_DE0_nano                    ;
 ; Top-level Entity Name              ; DE0Nano_FreeRTOS                            ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+--------------------------+
 ; Option            ; Setting                  ;
 +-------------------+--------------------------+
-; Start date & time ; 10/14/2019 19:13:58      ;
+; Start date & time ; 10/14/2019 22:07:36      ;
 ; Main task         ; Compilation              ;
 ; Revision Name     ; niosII_freeRTOS_DE0_nano ;
 +-------------------+--------------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------------------------+--------------------------+------------------+------------+
 ; Assignment Name                     ; Value                                                    ; Default Value            ; Entity Name      ; Section Id ;
 +-------------------------------------+----------------------------------------------------------+--------------------------+------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 110073160377169.157109123819582                          ; --                       ; --               ; --         ;
+; COMPILER_SIGNATURE_ID               ; 110073160377169.157110165611175                          ; --                       ; --               ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                       ; --                       ; --               ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                        ; --                       ; --               ; --         ;
 ; MISC_FILE                           ; niosII/synthesis/../niosII.cmp                           ; --                       ; --               ; --         ;
@@ -108,11 +108,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:01:04     ; 1.0                     ; 1141 MB             ; 00:02:00                           ;
-; Fitter               ; 00:00:33     ; 1.1                     ; 1604 MB             ; 00:00:46                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 831 MB              ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:06     ; 1.2                     ; 905 MB              ; 00:00:06                           ;
-; Total                ; 00:01:47     ; --                      ; --                  ; 00:02:55                           ;
+; Analysis & Synthesis ; 00:00:43     ; 1.0                     ; 1148 MB             ; 00:01:19                           ;
+; Fitter               ; 00:00:20     ; 1.1                     ; 1590 MB             ; 00:00:29                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 831 MB              ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.2                     ; 909 MB              ; 00:00:05                           ;
+; Total                ; 00:01:09     ; --                      ; --                  ; 00:01:56                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

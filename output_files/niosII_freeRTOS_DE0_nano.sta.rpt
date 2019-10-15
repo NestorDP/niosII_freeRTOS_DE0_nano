@@ -1,5 +1,5 @@
 Timing Analyzer report for niosII_freeRTOS_DE0_nano
-Mon Oct 14 19:15:57 2019
+Mon Oct 14 22:08:55 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -107,14 +107,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.20        ;
+; Average used               ; 1.23        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   6.8%      ;
-;     Processor 3            ;   6.5%      ;
-;     Processor 4            ;   6.5%      ;
+;     Processor 2            ;   7.8%      ;
+;     Processor 3            ;   7.4%      ;
+;     Processor 4            ;   7.4%      ;
 +----------------------------+-------------+
 
 
@@ -123,9 +123,9 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                                            ; Status ; Read at                  ;
 +--------------------------------------------------------------------------+--------+--------------------------+
-; niosII/synthesis/submodules/altera_reset_controller.sdc                  ; OK     ; Mon Oct 14 19:15:54 2019 ;
-; niosII/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc ; OK     ; Mon Oct 14 19:15:54 2019 ;
-; niosII/synthesis/submodules/niosII_cpu_cpu.sdc                           ; OK     ; Mon Oct 14 19:15:54 2019 ;
+; niosII/synthesis/submodules/altera_reset_controller.sdc                  ; OK     ; Mon Oct 14 22:08:52 2019 ;
+; niosII/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc ; OK     ; Mon Oct 14 22:08:52 2019 ;
+; niosII/synthesis/submodules/niosII_cpu_cpu.sdc                           ; OK     ; Mon Oct 14 22:08:52 2019 ;
 +--------------------------------------------------------------------------+--------+--------------------------+
 
 
@@ -2315,7 +2315,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Oct 14 19:15:51 2019
+    Info: Processing started: Mon Oct 14 22:08:51 2019
 Info: Command: quartus_sta niosII_freeRTOS_DE0_nano -c niosII_freeRTOS_DE0_nano
 Info: qsta_default_script.tcl version: #1
 Warning (20013): Ignored 178 assignments for entity "DE0_NANO" -- entity does not exist in design
@@ -2663,9 +2663,9 @@ Info (332114): Report Metastability: Found 3 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 204 warnings
-    Info: Peak virtual memory: 905 megabytes
-    Info: Processing ended: Mon Oct 14 19:15:57 2019
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 909 megabytes
+    Info: Processing ended: Mon Oct 14 22:08:55 2019
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:05
 
 
