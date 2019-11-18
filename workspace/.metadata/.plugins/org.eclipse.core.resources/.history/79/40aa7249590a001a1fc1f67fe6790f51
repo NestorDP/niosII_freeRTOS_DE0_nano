@@ -26,20 +26,20 @@
 
 int main()
 {
-	char str  = 0;
+	char str[30];
 
 	FILE* stream_UART;
-	stream_UART = fopen ("/dev/uart", "r+");
+	stream_UART = fopen ("/dev/uart", "w");
 	if (stream_UART == NULL)
 	{
 		printf("Nao foi criada stream UART");
 	}
-	printf("Hello from Nios II!\n");
+	printf("Hello from Nios II! %s\n", str);
 
 	while(1)
 	{
-		str = getc(stream_UART);
-		fprintf(stream_UART, "NIOS II Task1 from uart %c \n ",str);
+		gets(str);
+		fprintf(stream_UART, "NIOS II Task1 from uart\r\n ");
 	}
 
 	printf("Hello from Nios II!\n");

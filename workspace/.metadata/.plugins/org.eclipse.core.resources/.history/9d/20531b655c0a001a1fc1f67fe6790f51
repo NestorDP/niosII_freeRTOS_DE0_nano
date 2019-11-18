@@ -39,7 +39,7 @@ int main()
 	while(1)
 	{
 		str = getc(stream_UART);
-		fprintf(stream_UART, "NIOS II Task1 from uart %c \n ",str);
+		printf("NIOS II Task1 from uart %c \n ",str);
 	}
 
 	printf("Hello from Nios II!\n");

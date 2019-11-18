@@ -29,7 +29,7 @@ int main()
 	char str  = 0;
 
 	FILE* stream_UART;
-	stream_UART = fopen ("/dev/uart", "r+");
+	stream_UART = fopen ("/dev/uart", "rw");
 	if (stream_UART == NULL)
 	{
 		printf("Nao foi criada stream UART");
@@ -39,7 +39,7 @@ int main()
 	while(1)
 	{
 		str = getc(stream_UART);
-		fprintf(stream_UART, "NIOS II Task1 from uart %c \n ",str);
+		printf("NIOS II Task1 from uart %c \n ",str);
 	}
 
 	printf("Hello from Nios II!\n");
