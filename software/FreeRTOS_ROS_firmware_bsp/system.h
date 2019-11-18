@@ -1,5 +1,4 @@
 /*
- * system.h - SOPC Builder system and BSP software package information
  *
  * Machine generated for CPU 'cpu' in SOPC Builder design 'niosII'
  * SOPC Builder design path: ../../niosII.sopcinfo

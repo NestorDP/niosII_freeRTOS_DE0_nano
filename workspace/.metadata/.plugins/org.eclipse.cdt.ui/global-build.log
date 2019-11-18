@@ -1,36 +1,18 @@
-22:03:57 **** Incremental Build of configuration Nios II for project FreeRTOS_niosII ****
+17:42:02 **** Incremental Build of configuration Nios II for project ISR_UART ****
 make all 
-Info: Building ../FreeRTOS_niosII_bsp/
-make --no-print-directory -C ../FreeRTOS_niosII_bsp/
+Info: Building ../ISR_UART_bsp/
+make --no-print-directory -C ../ISR_UART_bsp/
 [BSP build complete]
-[FreeRTOS_niosII build complete]
-22:11:12 **** Build of configuration Nios II for project FreeRTOS_niosII ****
+[ISR_UART build complete]
+17:42:12 **** Build of configuration Nios II for project ISR_UART ****
 make all 
-Info: Building ../FreeRTOS_niosII_bsp/
-make --no-print-directory -C ../FreeRTOS_niosII_bsp/
+Info: Building ../ISR_UART_bsp/
+make --no-print-directory -C ../ISR_UART_bsp/
 [BSP build complete]
-[FreeRTOS_niosII build complete]
-22:11:42 **** Build of configuration Nios II for project FreeRTOS_niosII ****
+[ISR_UART build complete]
+17:42:13 **** Incremental Build of configuration Nios II for project ISR_UART ****
 make all 
-Info: Building ../FreeRTOS_niosII_bsp/
-make --no-print-directory -C ../FreeRTOS_niosII_bsp/
+Info: Building ../ISR_UART_bsp/
+make --no-print-directory -C ../ISR_UART_bsp/
 [BSP build complete]
-[FreeRTOS_niosII build complete]
-22:12:33 **** Build of configuration Nios II for project FreeRTOS_niosII ****
-make all 
-Info: Building ../FreeRTOS_niosII_bsp/
-make --no-print-directory -C ../FreeRTOS_niosII_bsp/
-[BSP build complete]
-[FreeRTOS_niosII build complete]
-22:12:52 **** Incremental Build of configuration Nios II for project FreeRTOS_niosII ****
-make all 
-Info: Building ../FreeRTOS_niosII_bsp/
-make --no-print-directory -C ../FreeRTOS_niosII_bsp/
-[BSP build complete]
-[FreeRTOS_niosII build complete]
-22:25:16 **** Clean-only build of configuration Nios II for project FreeRTOS_ROS_firmware_bsp ****
-make clean 
-[BSP clean complete]
-22:25:18 **** Clean-only build of configuration Nios II for project FreeRTOS_ROS_firmware ****
-make clean 
-[FreeRTOS_ROS_firmware clean complete]
+[ISR_UART build complete]

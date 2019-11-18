@@ -1,0 +1,9 @@
+17:42:13 **** Incremental Build of configuration Nios II for project ISR_UART ****
+make all 
+Info: Building ../ISR_UART_bsp/
+make --no-print-directory -C ../ISR_UART_bsp/
+[BSP build complete]
+[ISR_UART build complete]
+
+17:42:13 Build Finished (took 112ms)
+
