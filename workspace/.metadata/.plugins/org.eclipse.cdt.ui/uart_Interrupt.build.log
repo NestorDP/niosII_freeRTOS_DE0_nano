@@ -1,0 +1,18 @@
+19:20:42 **** Incremental Build of configuration Nios II for project uart_Interrupt ****
+make all 
+Info: Building ../uart_Interrupt_bsp/
+make --no-print-directory -C ../uart_Interrupt_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../uart_Interrupt_bsp//HAL/inc -I../uart_Interrupt_bsp/ -I../uart_Interrupt_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking uart_Interrupt.elf
+nios2-elf-g++  -T'../uart_Interrupt_bsp//linker.x' -msys-crt0='../uart_Interrupt_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../uart_Interrupt_bsp/   -Wl,-Map=uart_Interrupt.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o uart_Interrupt.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert uart_Interrupt.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x4002090 --timestamp 1571091206 --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name niosII --quartus_project_dir "/home/nestor/repositorios/niosII_freeRTOS_DE0_nano" --jdi ../..//output_files/niosII_freeRTOS_DE0_nano.jdi --sopcinfo /home/nestor/repositorios/niosII_freeRTOS_DE0_nano/software/uart_Interrupt_bsp/../../niosII.sopcinfo
+Info: (uart_Interrupt.elf) 80 KBytes program size (code + initialized data).
+Info:                      32687 KBytes free for stack + heap.
+Info: Creating uart_Interrupt.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source uart_Interrupt.elf >uart_Interrupt.objdump
+[uart_Interrupt build complete]
+
+19:20:42 Build Finished (took 512ms)
+
