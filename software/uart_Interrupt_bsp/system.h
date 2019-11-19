@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'niosII'
  * SOPC Builder design path: ../../niosII.sopcinfo
  *
- * Generated: Mon Nov 18 17:54:16 BRT 2019
+ * Generated: Tue Nov 19 19:48:05 BRT 2019
  */
 
 /*
@@ -221,18 +221,18 @@
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
-#define ALT_STDIN "/dev/jtag"
-#define ALT_STDIN_BASE 0x4002098
-#define ALT_STDIN_DEV jtag
-#define ALT_STDIN_IS_JTAG_UART
+#define ALT_STDIN "/dev/uart"
+#define ALT_STDIN_BASE 0x4002000
+#define ALT_STDIN_DEV uart
+#define ALT_STDIN_IS_UART
 #define ALT_STDIN_PRESENT
-#define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
-#define ALT_STDOUT "/dev/jtag"
-#define ALT_STDOUT_BASE 0x4002098
-#define ALT_STDOUT_DEV jtag
-#define ALT_STDOUT_IS_JTAG_UART
+#define ALT_STDIN_TYPE "altera_avalon_uart"
+#define ALT_STDOUT "/dev/uart"
+#define ALT_STDOUT_BASE 0x4002000
+#define ALT_STDOUT_DEV uart
+#define ALT_STDOUT_IS_UART
 #define ALT_STDOUT_PRESENT
-#define ALT_STDOUT_TYPE "altera_avalon_jtag_uart"
+#define ALT_STDOUT_TYPE "altera_avalon_uart"
 #define ALT_SYSTEM_NAME "niosII"
 
 

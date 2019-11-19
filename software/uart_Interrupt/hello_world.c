@@ -16,6 +16,7 @@
 
 #include <stddef.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 #include "sys/alt_irq.h"
@@ -26,23 +27,27 @@
 
 int main()
 {
-	char str  = 0;
-
+	char str;
+/*
 	FILE* stream_UART;
 	stream_UART = fopen ("/dev/uart", "r+");
 	if (stream_UART == NULL)
 	{
 		printf("Nao foi criada stream UART");
 	}
+	*/
+	fprintf(stderr, "Hello from Nios II!\n");
+	//fprintf(stream_UART, "NIOS II Task1 from uart \n ");
+
 	printf("Hello from Nios II!\n");
 
 	while(1)
 	{
-		str = getc(stream_UART);
-		fprintf(stream_UART, "NIOS II Task1 from uart %c \n ",str);
+		scanf("%c", &str);
+		fprintf("NIOS II Task1 from uart %c \n ",str);
 	}
 
-	printf("Hello from Nios II!\n");
+
 
 	return 0;
 }

@@ -1,9 +1,9 @@
-20:37:42 **** Incremental Build of configuration Nios II for project uart_Interrupt ****
+20:00:25 **** Incremental Build of configuration Nios II for project uart_Interrupt ****
 make all 
 Info: Building ../uart_Interrupt_bsp/
 make --no-print-directory -C ../uart_Interrupt_bsp/
 [BSP build complete]
 [uart_Interrupt build complete]
 
-20:37:42 Build Finished (took 166ms)
+20:00:25 Build Finished (took 169ms)
 
