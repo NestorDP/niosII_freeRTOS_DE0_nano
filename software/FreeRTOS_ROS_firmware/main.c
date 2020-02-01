@@ -117,7 +117,7 @@ static void prvPrintTask2( void *pvParameters )
         printf("NIOS II Task2 %s\r\n", str );
 
         /*Control LED 2 DE0-NANO*/
-        //vParTestToggleLED(2);
+        vParTestToggleLED(2);
 	}
 }
 /*-----------------------------------------------------------*/

@@ -1,4 +1,4 @@
-//Legal Notice: (C)2019 Altera Corporation. All rights reserved.  Your
+//Legal Notice: (C)2020 Altera Corporation. All rights reserved.  Your
 //use of Altera Corporation's design tools, logic functions and other
 //software and tools, and its AMPP partner logic functions, and any
 //output files any of the foregoing (including device programming or
@@ -2343,7 +2343,7 @@ defparam niosII_cpu_cpu_ociram_sp_ram.lpm_file = "niosII_cpu_cpu_ociram_default_
     (MonAReg[4 : 2] == 3'd2)? 32'h00040000 :
     (MonAReg[4 : 2] == 3'd3)? 32'h00000100 :
     (MonAReg[4 : 2] == 3'd4)? 32'h20000000 :
-    (MonAReg[4 : 2] == 3'd5)? 32'h04001000 :
+    (MonAReg[4 : 2] == 3'd5)? 32'h02000000 :
     (MonAReg[4 : 2] == 3'd6)? 32'h00000000 :
     32'h00000000;
 
@@ -3874,7 +3874,7 @@ reg              wait_for_one_post_bret_inst;
   always @(posedge clk or negedge reset_n)
     begin
       if (reset_n == 0)
-          F_pc <= 16778240;
+          F_pc <= 8388608;
       else if (F_pc_en)
           F_pc <= F_pc_nxt;
     end

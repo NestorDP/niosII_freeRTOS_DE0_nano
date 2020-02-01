@@ -1,0 +1,40 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst niosII.sdram -pg 1 -lvl 3 -y 1070
+preplace inst niosII.IO_Pio -pg 1 -lvl 3 -y 30
+preplace inst niosII -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst niosII.sys_clk_timer -pg 1 -lvl 3 -y 830
+preplace inst niosII.cpu.cpu -pg 1
+preplace inst niosII.clock_50 -pg 1 -lvl 2 -y 670
+preplace inst niosII.sys_pll -pg 1 -lvl 3 -y 670
+preplace inst niosII.uart -pg 1 -lvl 3 -y 930
+preplace inst niosII.Button_Pio -pg 1 -lvl 3 -y 130
+preplace inst niosII.ram_clk -pg 1 -lvl 4 -y 1030
+preplace inst niosII.jtag -pg 1 -lvl 3 -y 570
+preplace inst niosII.sys_id -pg 1 -lvl 3 -y 750
+preplace inst niosII.LED_Pio -pg 1 -lvl 3 -y 230
+preplace inst niosII.Switch_Pio -pg 1 -lvl 3 -y 330
+preplace inst niosII.cpu.clock_bridge -pg 1
+preplace inst niosII.sys_clk -pg 1 -lvl 1 -y 520
+preplace inst niosII.epcs -pg 1 -lvl 3 -y 430
+preplace inst niosII.cpu.reset_bridge -pg 1
+preplace inst niosII.cpu -pg 1 -lvl 2 -y 410
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.port_sw,(SLAVE)Switch_Pio.external_interface) 1 0 3 NJ 370 NJ 370 NJ
+preplace netloc FAN_OUT<net_container>niosII</net_container>(MASTER)sys_clk.clk,(SLAVE)Button_Pio.clk,(SLAVE)LED_Pio.clk,(SLAVE)sys_clk_timer.clk,(SLAVE)IO_Pio.clk,(SLAVE)cpu.clk,(SLAVE)uart.clk,(SLAVE)Switch_Pio.clk,(SLAVE)sdram.clk,(SLAVE)sys_id.clk) 1 1 2 350 590 750
+preplace netloc FAN_OUT<net_container>niosII</net_container>(MASTER)sys_pll.c0,(SLAVE)epcs.clk,(SLAVE)sys_clk.clk_in) 1 0 4 110 630 NJ 630 810 560 1100
+preplace netloc POINT_TO_POINT<net_container>niosII</net_container>(SLAVE)ram_clk.clk_in,(MASTER)sys_pll.c1) 1 3 1 1100
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.clk,(SLAVE)clock_50.clk_in) 1 0 2 NJ 680 NJ
+preplace netloc FAN_OUT<net_container>niosII</net_container>(SLAVE)epcs.irq,(SLAVE)sys_clk_timer.irq,(MASTER)cpu.irq,(SLAVE)jtag.irq,(SLAVE)uart.irq) 1 2 1 850
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.sdram,(SLAVE)sdram.wire) 1 0 3 NJ 1140 NJ 1140 NJ
+preplace netloc INTERCONNECT<net_container>niosII</net_container>(SLAVE)uart.reset,(SLAVE)jtag.reset,(SLAVE)LED_Pio.reset,(SLAVE)Button_Pio.reset,(SLAVE)sdram.reset,(SLAVE)epcs.reset,(SLAVE)sys_clk_timer.reset,(MASTER)cpu.debug_reset_request,(SLAVE)sys_clk.clk_in_reset,(SLAVE)sys_pll.inclk_interface_reset,(SLAVE)sys_id.reset,(MASTER)clock_50.clk_reset,(SLAVE)IO_Pio.reset,(SLAVE)cpu.reset,(SLAVE)Switch_Pio.reset,(SLAVE)ram_clk.clk_in_reset) 1 0 4 130 590 330 570 770 1060 NJ
+preplace netloc INTERCONNECT<net_container>niosII</net_container>(SLAVE)IO_Pio.avalon_parallel_port_slave,(SLAVE)Switch_Pio.avalon_parallel_port_slave,(SLAVE)LED_Pio.avalon_parallel_port_slave,(SLAVE)cpu.debug_mem_slave,(MASTER)cpu.instruction_master,(MASTER)cpu.data_master,(SLAVE)sys_id.control_slave,(SLAVE)epcs.epcs_control_port,(SLAVE)sys_pll.pll_slave,(SLAVE)sys_clk_timer.s1,(SLAVE)Button_Pio.avalon_parallel_port_slave,(SLAVE)sdram.s1,(SLAVE)jtag.avalon_jtag_slave,(SLAVE)uart.s1) 1 1 2 370 550 790
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)IO_Pio.external_interface,(SLAVE)niosII.port_gpio_0) 1 0 3 NJ 80 NJ 80 NJ
+preplace netloc EXPORT<net_container>niosII</net_container>(MASTER)ram_clk.clk,(MASTER)niosII.ram_clk) 1 4 1 N
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.uart,(SLAVE)uart.external_connection) 1 0 3 NJ 960 NJ 960 NJ
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.reset,(SLAVE)clock_50.clk_in_reset) 1 0 2 NJ 700 NJ
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.port_key,(SLAVE)Button_Pio.external_interface) 1 0 3 NJ 180 NJ 180 NJ
+preplace netloc FAN_OUT<net_container>niosII</net_container>(SLAVE)sys_pll.inclk_interface,(SLAVE)jtag.clk,(MASTER)clock_50.clk) 1 2 1 870
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)LED_Pio.external_interface,(SLAVE)niosII.port_led) 1 0 3 NJ 280 NJ 280 NJ
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.epcs,(SLAVE)epcs.external) 1 0 3 NJ 610 NJ 610 NJ
+levelinfo -pg 1 0 80 1380
+levelinfo -hier niosII 90 160 490 910 1130 1300

@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'niosII'
  * SOPC Builder design path: ../../niosII.sopcinfo
  *
- * Generated: Mon Oct 14 22:25:15 BRT 2019
+ * Generated: Fri Jan 31 21:14:01 BRT 2020
  */
 
 /*
@@ -50,10 +50,9 @@
 
 MEMORY
 {
-    sdram_BEFORE_EXCEPTION : ORIGIN = 0x2000000, LENGTH = 32
+    reset : ORIGIN = 0x2000000, LENGTH = 32
     sdram : ORIGIN = 0x2000020, LENGTH = 33554400
-    reset : ORIGIN = 0x4001000, LENGTH = 32
-    epcs : ORIGIN = 0x4001020, LENGTH = 2016
+    epcs : ORIGIN = 0x4001000, LENGTH = 2048
 }
 
 /* Define symbols for each memory base-address */

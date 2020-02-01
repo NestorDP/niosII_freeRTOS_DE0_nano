@@ -2,7 +2,7 @@ set_global_assignment -entity "niosII" -library "niosII" -name IP_TOOL_NAME "Qsy
 set_global_assignment -entity "niosII" -library "niosII" -name IP_TOOL_VERSION "18.1"
 set_global_assignment -entity "niosII" -library "niosII" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "niosII" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../niosII.sopcinfo"]
-set_global_assignment -entity "niosII" -library "niosII" -name SLD_INFO "QSYS_NAME niosII HAS_SOPCINFO 1 GENERATION_ID 1571091206"
+set_global_assignment -entity "niosII" -library "niosII" -name SLD_INFO "QSYS_NAME niosII HAS_SOPCINFO 1 GENERATION_ID 1580515529"
 set_global_assignment -library "niosII" -name MISC_FILE [file join $::quartus(qip_path) "../niosII.cmp"]
 set_global_assignment -library "niosII" -name SLD_FILE [file join $::quartus(qip_path) "niosII.regmap"]
 set_global_assignment -library "niosII" -name SLD_FILE [file join $::quartus(qip_path) "niosII.debuginfo"]
@@ -16,7 +16,7 @@ set_global_assignment -entity "niosII" -library "niosII" -name IP_COMPONENT_DISP
 set_global_assignment -entity "niosII" -library "niosII" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "niosII" -library "niosII" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "niosII" -library "niosII" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "niosII" -library "niosII" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTU3MTA5MTIwNg==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "niosII" -library "niosII" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTU4MDUxNTUyOQ==::QXV0byBHRU5FUkFUSU9OX0lE"
 set_global_assignment -entity "niosII" -library "niosII" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBJViBF::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "niosII" -library "niosII" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::RVA0Q0UyMkYxN0M2::QXV0byBERVZJQ0U="
 set_global_assignment -entity "niosII" -library "niosII" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Ng==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
@@ -1073,7 +1073,7 @@ set_global_assignment -entity "niosII_cpu" -library "niosII" -name IP_COMPONENT_
 set_global_assignment -entity "niosII_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "ZXhjZXB0aW9uT2Zmc2V0::MzI=::RXhjZXB0aW9uIHZlY3RvciBvZmZzZXQ="
 set_global_assignment -entity "niosII_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "Y3B1SUQ=::MA==::Q1BVSUQgY29udHJvbCByZWdpc3RlciB2YWx1ZQ=="
 set_global_assignment -entity "niosII_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "YnJlYWtPZmZzZXQ=::MzI=::QnJlYWsgdmVjdG9yIG9mZnNldA=="
-set_global_assignment -entity "niosII_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "cmVzZXRTbGF2ZQ==::ZXBjcy5lcGNzX2NvbnRyb2xfcG9ydA==::UmVzZXQgdmVjdG9yIG1lbW9yeQ=="
+set_global_assignment -entity "niosII_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "cmVzZXRTbGF2ZQ==::c2RyYW0uczE=::UmVzZXQgdmVjdG9yIG1lbW9yeQ=="
 set_global_assignment -entity "niosII_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "ZXhjZXB0aW9uU2xhdmU=::c2RyYW0uczE=::RXhjZXB0aW9uIHZlY3RvciBtZW1vcnk="
 set_global_assignment -entity "niosII_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "YnJlYWtTbGF2ZQ==::Tm9uZQ==::QnJlYWsgdmVjdG9yIG1lbW9yeQ=="
 set_global_assignment -entity "niosII_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "Y3B1QXJjaFJldg==::MQ==::QXJjaGl0ZWN0dXJlIFJldmlzaW9u"
@@ -1132,7 +1132,7 @@ set_global_assignment -entity "niosII_cpu" -library "niosII" -name IP_COMPONENT_
 set_global_assignment -entity "niosII_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "aW5zdHJ1Y3Rpb25fbWFzdGVyX2hpZ2hfcGVyZm9ybWFuY2VfcGFkZHJfc2l6ZQ==::MA==::SW5zdHJ1Y3Rpb24gTWFzdGVyIEhpZ2ggUGVyZm9ybWFuY2UgU2l6ZQ=="
 set_global_assignment -entity "niosII_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "ZGF0YV9tYXN0ZXJfaGlnaF9wZXJmb3JtYW5jZV9wYWRkcl9iYXNl::MA==::RGF0YSBNYXN0ZXIgSGlnaCBQZXJmb3JtYW5jZSBCYXNlIEFkZHJlc3M="
 set_global_assignment -entity "niosII_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "ZGF0YV9tYXN0ZXJfaGlnaF9wZXJmb3JtYW5jZV9wYWRkcl9zaXpl::MA==::RGF0YSBNYXN0ZXIgSGlnaCBQZXJmb3JtYW5jZSBTaXpl"
-set_global_assignment -entity "niosII_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "cmVzZXRBYnNvbHV0ZUFkZHI=::NjcxMTI5NjA=::UmVzZXQgdmVjdG9y"
+set_global_assignment -entity "niosII_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "cmVzZXRBYnNvbHV0ZUFkZHI=::MzM1NTQ0MzI=::UmVzZXQgdmVjdG9y"
 set_global_assignment -entity "niosII_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "ZXhjZXB0aW9uQWJzb2x1dGVBZGRy::MzM1NTQ0NjQ=::RXhjZXB0aW9uIHZlY3Rvcg=="
 set_global_assignment -entity "niosII_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "YnJlYWtBYnNvbHV0ZUFkZHI=::NjcxMTUwNDA=::QnJlYWsgdmVjdG9y"
 set_global_assignment -entity "niosII_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "bW11X1RMQk1pc3NFeGNBYnNBZGRy::MA==::RmFzdCBUTEIgTWlzcyBFeGNlcHRpb24gdmVjdG9y"
@@ -1226,7 +1226,7 @@ set_global_assignment -entity "niosII_cpu_cpu" -library "niosII" -name IP_COMPON
 set_global_assignment -entity "niosII_cpu_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "ZXhjZXB0aW9uT2Zmc2V0::MzI=::RXhjZXB0aW9uIHZlY3RvciBvZmZzZXQ="
 set_global_assignment -entity "niosII_cpu_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "Y3B1SUQ=::MA==::Q1BVSUQgY29udHJvbCByZWdpc3RlciB2YWx1ZQ=="
 set_global_assignment -entity "niosII_cpu_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "YnJlYWtPZmZzZXQ=::MzI=::QnJlYWsgdmVjdG9yIG9mZnNldA=="
-set_global_assignment -entity "niosII_cpu_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "cmVzZXRTbGF2ZQ==::ZXBjcy5lcGNzX2NvbnRyb2xfcG9ydA==::UmVzZXQgdmVjdG9yIG1lbW9yeQ=="
+set_global_assignment -entity "niosII_cpu_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "cmVzZXRTbGF2ZQ==::c2RyYW0uczE=::UmVzZXQgdmVjdG9yIG1lbW9yeQ=="
 set_global_assignment -entity "niosII_cpu_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "bW11X1RMQk1pc3NFeGNTbGF2ZQ==::Tm9uZQ==::RmFzdCBUTEIgTWlzcyBFeGNlcHRpb24gdmVjdG9yIG1lbW9yeQ=="
 set_global_assignment -entity "niosII_cpu_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "ZXhjZXB0aW9uU2xhdmU=::c2RyYW0uczE=::RXhjZXB0aW9uIHZlY3RvciBtZW1vcnk="
 set_global_assignment -entity "niosII_cpu_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "YnJlYWtTbGF2ZQ==::Tm9uZQ==::QnJlYWsgdmVjdG9yIG1lbW9yeQ=="
@@ -1315,7 +1315,7 @@ set_global_assignment -entity "niosII_cpu_cpu" -library "niosII" -name IP_COMPON
 set_global_assignment -entity "niosII_cpu_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "aW5zdHJ1Y3Rpb25fbWFzdGVyX2hpZ2hfcGVyZm9ybWFuY2VfcGFkZHJfdG9w::MA==::aW5zdHJ1Y3Rpb25fbWFzdGVyX2hpZ2hfcGVyZm9ybWFuY2VfcGFkZHJfdG9w"
 set_global_assignment -entity "niosII_cpu_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "ZGF0YV9tYXN0ZXJfaGlnaF9wZXJmb3JtYW5jZV9wYWRkcl9iYXNl::MA==::ZGF0YV9tYXN0ZXJfaGlnaF9wZXJmb3JtYW5jZV9wYWRkcl9iYXNl"
 set_global_assignment -entity "niosII_cpu_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "ZGF0YV9tYXN0ZXJfaGlnaF9wZXJmb3JtYW5jZV9wYWRkcl90b3A=::MA==::ZGF0YV9tYXN0ZXJfaGlnaF9wZXJmb3JtYW5jZV9wYWRkcl90b3A="
-set_global_assignment -entity "niosII_cpu_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "cmVzZXRBYnNvbHV0ZUFkZHI=::NjcxMTI5NjA=::UmVzZXQgdmVjdG9y"
+set_global_assignment -entity "niosII_cpu_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "cmVzZXRBYnNvbHV0ZUFkZHI=::MzM1NTQ0MzI=::UmVzZXQgdmVjdG9y"
 set_global_assignment -entity "niosII_cpu_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "ZXhjZXB0aW9uQWJzb2x1dGVBZGRy::MzM1NTQ0NjQ=::RXhjZXB0aW9uIHZlY3Rvcg=="
 set_global_assignment -entity "niosII_cpu_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "YnJlYWtBYnNvbHV0ZUFkZHI=::NjcxMTUwNDA=::QnJlYWsgdmVjdG9y"
 set_global_assignment -entity "niosII_cpu_cpu" -library "niosII" -name IP_COMPONENT_PARAMETER "bW11X1RMQk1pc3NFeGNBYnNBZGRy::MA==::RmFzdCBUTEIgTWlzcyBFeGNlcHRpb24gdmVjdG9y"

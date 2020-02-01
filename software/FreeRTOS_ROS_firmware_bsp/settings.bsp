@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Oct 14, 2019 10:42:47 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1571103767323</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Jan 31, 2020 9:14:00 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1580516040401</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>/home/nestor/repositorios/niosII_freeRTOS_DE0_nano/software/FreeRTOS_ROS_firmware_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>../../niosII.sopcinfo</SopcDesignFile>

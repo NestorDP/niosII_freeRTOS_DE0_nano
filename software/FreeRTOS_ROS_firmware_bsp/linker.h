@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'niosII'
  * SOPC Builder design path: ../../niosII.sopcinfo
  *
- * Generated: Mon Oct 14 22:25:15 BRT 2019
+ * Generated: Fri Jan 31 21:14:01 BRT 2020
  */
 
 /*
@@ -65,12 +65,10 @@
  *
  */
 
-#define EPCS_REGION_BASE 0x4001020
-#define EPCS_REGION_SPAN 2016
-#define RESET_REGION_BASE 0x4001000
+#define EPCS_REGION_BASE 0x4001000
+#define EPCS_REGION_SPAN 2048
+#define RESET_REGION_BASE 0x2000000
 #define RESET_REGION_SPAN 32
-#define SDRAM_BEFORE_EXCEPTION_REGION_BASE 0x2000000
-#define SDRAM_BEFORE_EXCEPTION_REGION_SPAN 32
 #define SDRAM_REGION_BASE 0x2000020
 #define SDRAM_REGION_SPAN 33554400
 
@@ -81,7 +79,7 @@
  */
 
 #define ALT_EXCEPTIONS_DEVICE SDRAM
-#define ALT_RESET_DEVICE EPCS
+#define ALT_RESET_DEVICE SDRAM
 #define ALT_RODATA_DEVICE SDRAM
 #define ALT_RWDATA_DEVICE SDRAM
 #define ALT_TEXT_DEVICE SDRAM

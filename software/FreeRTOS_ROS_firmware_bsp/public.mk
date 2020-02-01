@@ -157,9 +157,9 @@ SOPC_SYSID_FLAG += --sidp=0x4002090
 ELF_PATCH_FLAG  += --sidp 0x4002090
 
 # The SOPC Timestamp 
-# setting SOPC_TIMESTAMP is 1571091206
-SOPC_SYSID_FLAG += --timestamp=1571091206
-ELF_PATCH_FLAG  += --timestamp 1571091206
+# setting SOPC_TIMESTAMP is 1580515529
+SOPC_SYSID_FLAG += --timestamp=1580515529
+ELF_PATCH_FLAG  += --timestamp 1580515529
 
 # Enable JTAG UART driver to recover when host is inactive causing buffer to 
 # full without returning error. Printf will not fail with this recovery. none 

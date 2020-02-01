@@ -161,7 +161,7 @@ ACDS_VERSION := 18.1
 SIM_OPTIMIZE ?= 0
 
 # The CPU reset address as needed by elf2flash
-RESET_ADDRESS ?= 0x04001000
+RESET_ADDRESS ?= 0x02000000
 
 # The specific Nios II ELF file format to use.
 NIOS2_ELF_FORMAT ?= elf32-littlenios2
@@ -191,16 +191,6 @@ $(MEM_0)_ENDIANNESS := --little-endian-mem
 $(MEM_0)_CREATE_LANES := 0
 $(MEM_0)_EPCS_FLAGS := --epcs
 $(MEM_0)_NO_ZERO_FILL_FLAG := --no-zero-fill
-
-$(HDL_SIM_DIR)/$(MEM_0).dat: $(MEM_0).flash
-	$(post-process-info)
-	$(MKDIR) -p $(@D)
-	$(FLASH2DAT) --infile=$< --outfile=$@ \
-		--base=0x0 --end=0x7ff --width=$(mem_width) \
-		--create-lanes=$(mem_create_lanes) $(flash2dat_extra_args)
-
-
-FLASH_DAT_FILES += $(HDL_SIM_DIR)/$(MEM_0).dat
 
 .PHONY: epcs
 epcs: check_elf_exists $(HDL_SIM_DIR)/$(MEM_0).hex $(HDL_SIM_DIR)/$(MEM_0).dat $(HDL_SIM_DIR)/$(MEM_0).sym $(MEM_0).flash

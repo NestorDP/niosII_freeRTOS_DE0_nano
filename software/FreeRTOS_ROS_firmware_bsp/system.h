@@ -1,9 +1,10 @@
 /*
+ * system.h - SOPC Builder system and BSP software package information
  *
  * Machine generated for CPU 'cpu' in SOPC Builder design 'niosII'
  * SOPC Builder design path: ../../niosII.sopcinfo
  *
- * Generated: Mon Oct 14 22:25:15 BRT 2019
+ * Generated: Fri Jan 31 21:14:01 BRT 2020
  */
 
 /*
@@ -103,7 +104,7 @@
 #define ALT_CPU_INST_ADDR_WIDTH 0x1b
 #define ALT_CPU_NAME "cpu"
 #define ALT_CPU_OCI_VERSION 1
-#define ALT_CPU_RESET_ADDR 0x04001000
+#define ALT_CPU_RESET_ADDR 0x02000000
 
 
 /*
@@ -138,7 +139,7 @@
 #define NIOS2_ICACHE_SIZE 0
 #define NIOS2_INST_ADDR_WIDTH 0x1b
 #define NIOS2_OCI_VERSION 1
-#define NIOS2_RESET_ADDR 0x04001000
+#define NIOS2_RESET_ADDR 0x02000000
 
 
 /*
@@ -356,7 +357,7 @@
 #define SYS_ID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYS_ID_NAME "/dev/sys_id"
 #define SYS_ID_SPAN 8
-#define SYS_ID_TIMESTAMP 1571091206
+#define SYS_ID_TIMESTAMP 1580515529
 #define SYS_ID_TYPE "altera_avalon_sysid_qsys"
 
 

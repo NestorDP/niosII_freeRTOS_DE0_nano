@@ -61,3 +61,4 @@ db/
 incremental_db/
 niosII/
 output_files/
+greybox_tmp/
