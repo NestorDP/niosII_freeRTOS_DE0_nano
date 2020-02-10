@@ -1,0 +1,23 @@
+23:53:55 **** Incremental Build of configuration Nios II for project TesteGPIO_1 ****
+make all 
+Info: Building ../TesteGPIO_1_bsp/
+make --no-print-directory -C ../TesteGPIO_1_bsp/
+Makefile not up to date.
+../../niosII.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+Makefile:581: recipe for target 'public.mk' failed
+make[1]: *** [public.mk] Error 1
+Makefile:892: recipe for target '../TesteGPIO_1_bsp/-recurs-make-lib' failed
+make: *** [../TesteGPIO_1_bsp/-recurs-make-lib] Error 2
+
+23:53:55 Build Finished (took 113ms)
+
