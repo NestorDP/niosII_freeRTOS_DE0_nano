@@ -67,7 +67,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </table>
   <table class="blueBar">
    <tr>
-    <td class="l">2020.01.31.21:05:30</td>
+    <td class="l">2020.02.09.16:03:14</td>
     <td class="r">Datasheet</td>
    </tr>
   </table>
@@ -127,6 +127,9 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      <a href="#module_sdram"><b>sdram</b>
      </a> altera_avalon_new_sdram_controller 18.1
      <br/>&#160;&#160;
+     <a href="#module_spi"><b>spi</b>
+     </a> altera_avalon_spi 18.1
+     <br/>&#160;&#160;
      <a href="#module_sys_clk_timer"><b>sys_clk_timer</b>
      </a> altera_avalon_timer 18.1
      <br/>&#160;&#160;
@@ -164,7 +167,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">avalon_parallel_port_slave&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>04002070</td>
+    <td class="addr"><span style="color:#989898">0x</span>04002090</td>
     <td class="empty"></td>
    </tr>
    <tr>
@@ -177,7 +180,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">avalon_parallel_port_slave&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>04002040</td>
+    <td class="addr"><span style="color:#989898">0x</span>04002070</td>
     <td class="empty"></td>
    </tr>
    <tr>
@@ -190,7 +193,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">avalon_parallel_port_slave&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>04002080</td>
+    <td class="addr"><span style="color:#989898">0x</span>040020a0</td>
     <td class="empty"></td>
    </tr>
    <tr>
@@ -203,7 +206,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">avalon_parallel_port_slave&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>04002060</td>
+    <td class="addr"><span style="color:#989898">0x</span>04002080</td>
     <td class="empty"></td>
    </tr>
    <tr>
@@ -242,7 +245,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">avalon_jtag_slave&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>04002098</td>
+    <td class="addr"><span style="color:#989898">0x</span>040020b8</td>
     <td class="empty"></td>
    </tr>
    <tr>
@@ -260,6 +263,19 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slavemodule">&#160;
+     <a href="#module_spi"><b>spi</b>
+     </a>
+    </td>
+    <td class="empty"></td>
+    <td class="empty"></td>
+   </tr>
+   <tr>
+    <td class="slaveb">spi_control_port&#160;</td>
+    <td class="addr"><span style="color:#989898">0x</span>04002000</td>
+    <td class="empty"></td>
+   </tr>
+   <tr>
+    <td class="slavemodule">&#160;
      <a href="#module_sys_clk_timer"><b>sys_clk_timer</b>
      </a>
     </td>
@@ -268,7 +284,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">s1&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>04002020</td>
+    <td class="addr"><span style="color:#989898">0x</span>04002040</td>
     <td class="empty"></td>
    </tr>
    <tr>
@@ -281,7 +297,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">control_slave&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>04002090</td>
+    <td class="addr"><span style="color:#989898">0x</span>040020b0</td>
     <td class="empty"></td>
    </tr>
    <tr>
@@ -294,7 +310,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">pll_slave&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>04002050</td>
+    <td class="addr"><span style="color:#989898">0x</span>04002060</td>
     <td class="empty"></td>
    </tr>
    <tr>
@@ -307,7 +323,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">s1&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>04002000</td>
+    <td class="addr"><span style="color:#989898">0x</span>04002020</td>
     <td class="empty"></td>
    </tr>
   </table>
@@ -516,7 +532,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">gpio</td>
-        <td class="parametervalue">GPIO 0 (JP1)</td>
+        <td class="parametervalue">GPIO 1 (JP2)</td>
        </tr>
        <tr>
         <td class="parametername">DW</td>
@@ -902,7 +918,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        <a href="#module_sys_clk">sys_clk</a>
       </td>
       <td class="from">clk&#160;&#160;</td>
-      <td class="main" rowspan="51">cpu</td>
+      <td class="main" rowspan="56">cpu</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;clk</td>
@@ -1151,6 +1167,32 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
       <td></td>
       <td class="to">&#160;&#160;s1</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">irq&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;irq</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">data_master&#160;&#160;</td>
+      <td class="neighbor" rowspan="4">
+       <a href="#module_spi">spi</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;spi_control_port</td>
      </tr>
      <tr>
       <td></td>
@@ -1861,7 +1903,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">dataSlaveMapParam</td>
-        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='sdram.s1' start='0x2000000' end='0x4000000' type='altera_avalon_new_sdram_controller.s1' /&gt;&lt;slave name='epcs.epcs_control_port' start='0x4001000' end='0x4001800' type='altera_avalon_epcs_flash_controller.epcs_control_port' /&gt;&lt;slave name='cpu.debug_mem_slave' start='0x4001800' end='0x4002000' type='altera_nios2_gen2.debug_mem_slave' /&gt;&lt;slave name='uart.s1' start='0x4002000' end='0x4002020' type='altera_avalon_uart.s1' /&gt;&lt;slave name='sys_clk_timer.s1' start='0x4002020' end='0x4002040' type='altera_avalon_timer.s1' /&gt;&lt;slave name='IO_Pio.avalon_parallel_port_slave' start='0x4002040' end='0x4002050' type='altera_up_avalon_parallel_port.avalon_parallel_port_slave' /&gt;&lt;slave name='sys_pll.pll_slave' start='0x4002050' end='0x4002060' type='altpll.pll_slave' /&gt;&lt;slave name='Switch_Pio.avalon_parallel_port_slave' start='0x4002060' end='0x4002070' type='altera_up_avalon_parallel_port.avalon_parallel_port_slave' /&gt;&lt;slave name='Button_Pio.avalon_parallel_port_slave' start='0x4002070' end='0x4002080' type='altera_up_avalon_parallel_port.avalon_parallel_port_slave' /&gt;&lt;slave name='LED_Pio.avalon_parallel_port_slave' start='0x4002080' end='0x4002090' type='altera_up_avalon_parallel_port.avalon_parallel_port_slave' /&gt;&lt;slave name='sys_id.control_slave' start='0x4002090' end='0x4002098' type='altera_avalon_sysid_qsys.control_slave' /&gt;&lt;slave name='jtag.avalon_jtag_slave' start='0x4002098' end='0x40020A0' type='altera_avalon_jtag_uart.avalon_jtag_slave' /&gt;&lt;/address-map&gt;</td>
+        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='sdram.s1' start='0x2000000' end='0x4000000' type='altera_avalon_new_sdram_controller.s1' /&gt;&lt;slave name='epcs.epcs_control_port' start='0x4001000' end='0x4001800' type='altera_avalon_epcs_flash_controller.epcs_control_port' /&gt;&lt;slave name='cpu.debug_mem_slave' start='0x4001800' end='0x4002000' type='altera_nios2_gen2.debug_mem_slave' /&gt;&lt;slave name='spi.spi_control_port' start='0x4002000' end='0x4002020' type='altera_avalon_spi.spi_control_port' /&gt;&lt;slave name='uart.s1' start='0x4002020' end='0x4002040' type='altera_avalon_uart.s1' /&gt;&lt;slave name='sys_clk_timer.s1' start='0x4002040' end='0x4002060' type='altera_avalon_timer.s1' /&gt;&lt;slave name='sys_pll.pll_slave' start='0x4002060' end='0x4002070' type='altpll.pll_slave' /&gt;&lt;slave name='IO_Pio.avalon_parallel_port_slave' start='0x4002070' end='0x4002080' type='altera_up_avalon_parallel_port.avalon_parallel_port_slave' /&gt;&lt;slave name='Switch_Pio.avalon_parallel_port_slave' start='0x4002080' end='0x4002090' type='altera_up_avalon_parallel_port.avalon_parallel_port_slave' /&gt;&lt;slave name='Button_Pio.avalon_parallel_port_slave' start='0x4002090' end='0x40020A0' type='altera_up_avalon_parallel_port.avalon_parallel_port_slave' /&gt;&lt;slave name='LED_Pio.avalon_parallel_port_slave' start='0x40020A0' end='0x40020B0' type='altera_up_avalon_parallel_port.avalon_parallel_port_slave' /&gt;&lt;slave name='sys_id.control_slave' start='0x40020B0' end='0x40020B8' type='altera_avalon_sysid_qsys.control_slave' /&gt;&lt;slave name='jtag.avalon_jtag_slave' start='0x40020B8' end='0x40020C0' type='altera_avalon_jtag_uart.avalon_jtag_slave' /&gt;&lt;/address-map&gt;</td>
        </tr>
        <tr>
         <td class="parametername">tightlyCoupledDataMaster0MapParam</td>
@@ -1913,7 +1955,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">internalIrqMaskSystemInfo</td>
-        <td class="parametervalue">15</td>
+        <td class="parametervalue">31</td>
        </tr>
        <tr>
         <td class="parametername">customInstSlavesSystemInfo</td>
@@ -2718,6 +2760,224 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
     </tr>
    </table>
   </div>
+  <a name="module_spi"> </a>
+  <div>
+   <hr/>
+   <h2>spi</h2>altera_avalon_spi v18.1
+   <br/>
+   <div class="greydiv">
+    <table class="connectionboxes">
+     <tr>
+      <td class="neighbor" rowspan="4">
+       <a href="#module_cpu">cpu</a>
+      </td>
+      <td class="from">data_master&#160;&#160;</td>
+      <td class="main" rowspan="10">spi</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;spi_control_port</td>
+     </tr>
+     <tr>
+      <td class="from">irq&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;irq</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_sys_clk">sys_clk</a>
+      </td>
+      <td class="from">clk&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clk</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_clock_50">clock_50</a>
+      </td>
+      <td class="from">clk_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;reset</td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <br/>
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Parameters</h2>
+      <table>
+       <tr>
+        <td class="parametername">clockPhase</td>
+        <td class="parametervalue">0</td>
+       </tr>
+       <tr>
+        <td class="parametername">clockPolarity</td>
+        <td class="parametervalue">0</td>
+       </tr>
+       <tr>
+        <td class="parametername">dataWidth</td>
+        <td class="parametervalue">8</td>
+       </tr>
+       <tr>
+        <td class="parametername">disableAvalonFlowControl</td>
+        <td class="parametervalue">false</td>
+       </tr>
+       <tr>
+        <td class="parametername">insertDelayBetweenSlaveSelectAndSClk</td>
+        <td class="parametervalue">false</td>
+       </tr>
+       <tr>
+        <td class="parametername">insertSync</td>
+        <td class="parametervalue">false</td>
+       </tr>
+       <tr>
+        <td class="parametername">lsbOrderedFirst</td>
+        <td class="parametervalue">false</td>
+       </tr>
+       <tr>
+        <td class="parametername">masterSPI</td>
+        <td class="parametervalue">false</td>
+       </tr>
+       <tr>
+        <td class="parametername">numberOfSlaves</td>
+        <td class="parametervalue">1</td>
+       </tr>
+       <tr>
+        <td class="parametername">syncRegDepth</td>
+        <td class="parametervalue">2</td>
+       </tr>
+       <tr>
+        <td class="parametername">targetClockRate</td>
+        <td class="parametervalue">3125000</td>
+       </tr>
+       <tr>
+        <td class="parametername">targetSlaveSelectToSClkDelay</td>
+        <td class="parametervalue">0.0</td>
+       </tr>
+       <tr>
+        <td class="parametername">avalonSpec</td>
+        <td class="parametervalue">2.0</td>
+       </tr>
+       <tr>
+        <td class="parametername">inputClockRate</td>
+        <td class="parametervalue">100000000</td>
+       </tr>
+       <tr>
+        <td class="parametername">actualClockRate</td>
+        <td class="parametervalue">3125000.0</td>
+       </tr>
+       <tr>
+        <td class="parametername">actualSlaveSelectToSClkDelay</td>
+        <td class="parametervalue">0.0</td>
+       </tr>
+       <tr>
+        <td class="parametername">legacySignalsAllow</td>
+        <td class="parametervalue">false</td>
+       </tr>
+       <tr>
+        <td class="parametername">slaveDataBusWidth</td>
+        <td class="parametervalue">16</td>
+       </tr>
+       <tr>
+        <td class="parametername">deviceFamily</td>
+        <td class="parametervalue">UNKNOWN</td>
+       </tr>
+       <tr>
+        <td class="parametername">generateLegacySim</td>
+        <td class="parametervalue">false</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>&#160;&#160;
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Software Assignments</h2>
+      <table>
+       <tr>
+        <td class="parametername">CLOCKMULT</td>
+        <td class="parametervalue">1</td>
+       </tr>
+       <tr>
+        <td class="parametername">CLOCKPHASE</td>
+        <td class="parametervalue">0</td>
+       </tr>
+       <tr>
+        <td class="parametername">CLOCKPOLARITY</td>
+        <td class="parametervalue">0</td>
+       </tr>
+       <tr>
+        <td class="parametername">CLOCKUNITS</td>
+        <td class="parametervalue">"Hz"</td>
+       </tr>
+       <tr>
+        <td class="parametername">DATABITS</td>
+        <td class="parametervalue">8</td>
+       </tr>
+       <tr>
+        <td class="parametername">DATAWIDTH</td>
+        <td class="parametervalue">16</td>
+       </tr>
+       <tr>
+        <td class="parametername">DELAYMULT</td>
+        <td class="parametervalue">"1.0E-9"</td>
+       </tr>
+       <tr>
+        <td class="parametername">DELAYUNITS</td>
+        <td class="parametervalue">"ns"</td>
+       </tr>
+       <tr>
+        <td class="parametername">EXTRADELAY</td>
+        <td class="parametervalue">0</td>
+       </tr>
+       <tr>
+        <td class="parametername">INSERT_SYNC</td>
+        <td class="parametervalue">0</td>
+       </tr>
+       <tr>
+        <td class="parametername">ISMASTER</td>
+        <td class="parametervalue">0</td>
+       </tr>
+       <tr>
+        <td class="parametername">LSBFIRST</td>
+        <td class="parametervalue">0</td>
+       </tr>
+       <tr>
+        <td class="parametername">NUMSLAVES</td>
+        <td class="parametervalue">1</td>
+       </tr>
+       <tr>
+        <td class="parametername">PREFIX</td>
+        <td class="parametervalue">"spi_"</td>
+       </tr>
+       <tr>
+        <td class="parametername">SYNC_REG_DEPTH</td>
+        <td class="parametervalue">2</td>
+       </tr>
+       <tr>
+        <td class="parametername">TARGETCLOCK</td>
+        <td class="parametervalue">3125000u</td>
+       </tr>
+       <tr>
+        <td class="parametername">TARGETSSDELAY</td>
+        <td class="parametervalue">"0.0"</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+  </div>
   <a name="module_sys_clk"> </a>
   <div>
    <hr/>
@@ -2730,7 +2990,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        <a href="#module_sys_pll">sys_pll</a>
       </td>
       <td class="from">c0&#160;&#160;</td>
-      <td class="main" rowspan="31">sys_clk</td>
+      <td class="main" rowspan="34">sys_clk</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;clk_in</td>
@@ -2881,6 +3141,22 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td class="from">clk&#160;&#160;</td>
       <td class="neighbor" rowspan="2">
        <a href="#module_IO_Pio">IO_Pio</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;clk</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">clk&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_spi">spi</a>
       </td>
      </tr>
      <tr>
@@ -3182,7 +3458,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">timestamp</td>
-        <td class="parametervalue">1580515529</td>
+        <td class="parametervalue">1581274994</td>
        </tr>
        <tr>
         <td class="parametername">deviceFamily</td>
@@ -3207,7 +3483,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">TIMESTAMP</td>
-        <td class="parametervalue">1580515529</td>
+        <td class="parametervalue">1581274994</td>
        </tr>
       </table>
      </td>
@@ -4170,7 +4446,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </div>
   <table class="blueBar">
    <tr>
-    <td class="l">generation took 0.01 seconds</td>
+    <td class="l">generation took 0.00 seconds</td>
     <td class="r">rendering took 0.07 seconds</td>
    </tr>
   </table>

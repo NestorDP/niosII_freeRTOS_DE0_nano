@@ -22,6 +22,8 @@ Progress: Adding ram_clk [clock_source 18.1]
 Progress: Parameterizing module ram_clk
 Progress: Adding sdram [altera_avalon_new_sdram_controller 18.1]
 Progress: Parameterizing module sdram
+Progress: Adding spi [altera_avalon_spi 18.1]
+Progress: Parameterizing module spi
 Progress: Adding sys_clk [clock_source 18.1]
 Progress: Parameterizing module sys_clk
 Progress: Adding sys_clk_timer [altera_avalon_timer 18.1]
@@ -73,6 +75,8 @@ Progress: Adding ram_clk [clock_source 18.1]
 Progress: Parameterizing module ram_clk
 Progress: Adding sdram [altera_avalon_new_sdram_controller 18.1]
 Progress: Parameterizing module sdram
+Progress: Adding spi [altera_avalon_spi 18.1]
+Progress: Parameterizing module spi
 Progress: Adding sys_clk [clock_source 18.1]
 Progress: Parameterizing module sys_clk
 Progress: Adding sys_clk_timer [altera_avalon_timer 18.1]
@@ -116,25 +120,29 @@ Info: Switch_Pio: Starting Generation of Parallel Port
 Info: Switch_Pio: "niosII" instantiated altera_up_avalon_parallel_port "Switch_Pio"
 Info: cpu: "niosII" instantiated altera_nios2_gen2 "cpu"
 Info: epcs: Starting RTL generation for module 'niosII_epcs'
-Info: epcs:   Generation command is [exec /home/nestor/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/nestor/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_epcs_flash_controller -- /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_epcs_flash_controller/generate_rtl.pl --name=niosII_epcs --dir=/tmp/alt8293_2811719314300094481.dir/0006_epcs_gen/ --quartus_dir=/home/nestor/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt8293_2811719314300094481.dir/0006_epcs_gen//niosII_epcs_component_configuration.pl  --do_build_sim=0  ]
+Info: epcs:   Generation command is [exec /home/nestor/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/nestor/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_epcs_flash_controller -- /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_epcs_flash_controller/generate_rtl.pl --name=niosII_epcs --dir=/tmp/alt8301_2962541676177955578.dir/0047_epcs_gen/ --quartus_dir=/home/nestor/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt8301_2962541676177955578.dir/0047_epcs_gen//niosII_epcs_component_configuration.pl  --do_build_sim=0  ]
 Info: epcs: Done RTL generation for module 'niosII_epcs'
 Info: epcs: "niosII" instantiated altera_avalon_epcs_flash_controller "epcs"
 Info: jtag: Starting RTL generation for module 'niosII_jtag'
-Info: jtag:   Generation command is [exec /home/nestor/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/nestor/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=niosII_jtag --dir=/tmp/alt8293_2811719314300094481.dir/0007_jtag_gen/ --quartus_dir=/home/nestor/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt8293_2811719314300094481.dir/0007_jtag_gen//niosII_jtag_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag:   Generation command is [exec /home/nestor/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/nestor/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=niosII_jtag --dir=/tmp/alt8301_2962541676177955578.dir/0048_jtag_gen/ --quartus_dir=/home/nestor/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt8301_2962541676177955578.dir/0048_jtag_gen//niosII_jtag_component_configuration.pl  --do_build_sim=0  ]
 Info: jtag: Done RTL generation for module 'niosII_jtag'
 Info: jtag: "niosII" instantiated altera_avalon_jtag_uart "jtag"
 Info: sdram: Starting RTL generation for module 'niosII_sdram'
-Info: sdram:   Generation command is [exec /home/nestor/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/nestor/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=niosII_sdram --dir=/tmp/alt8293_2811719314300094481.dir/0008_sdram_gen/ --quartus_dir=/home/nestor/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt8293_2811719314300094481.dir/0008_sdram_gen//niosII_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram:   Generation command is [exec /home/nestor/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/nestor/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=niosII_sdram --dir=/tmp/alt8301_2962541676177955578.dir/0049_sdram_gen/ --quartus_dir=/home/nestor/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt8301_2962541676177955578.dir/0049_sdram_gen//niosII_sdram_component_configuration.pl  --do_build_sim=0  ]
 Info: sdram: Done RTL generation for module 'niosII_sdram'
 Info: sdram: "niosII" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: spi: Starting RTL generation for module 'niosII_spi'
+Info: spi:   Generation command is [exec /home/nestor/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/nestor/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=niosII_spi --dir=/tmp/alt8301_2962541676177955578.dir/0050_spi_gen/ --quartus_dir=/home/nestor/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt8301_2962541676177955578.dir/0050_spi_gen//niosII_spi_component_configuration.pl  --do_build_sim=0  ]
+Info: spi: Done RTL generation for module 'niosII_spi'
+Info: spi: "niosII" instantiated altera_avalon_spi "spi"
 Info: sys_clk_timer: Starting RTL generation for module 'niosII_sys_clk_timer'
-Info: sys_clk_timer:   Generation command is [exec /home/nestor/intelFPGA_lite/18.1/quartus/linux64//perl/bin/perl -I /home/nestor/intelFPGA_lite/18.1/quartus/linux64//perl/lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=niosII_sys_clk_timer --dir=/tmp/alt8293_2811719314300094481.dir/0009_sys_clk_timer_gen/ --quartus_dir=/home/nestor/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt8293_2811719314300094481.dir/0009_sys_clk_timer_gen//niosII_sys_clk_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: sys_clk_timer:   Generation command is [exec /home/nestor/intelFPGA_lite/18.1/quartus/linux64//perl/bin/perl -I /home/nestor/intelFPGA_lite/18.1/quartus/linux64//perl/lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=niosII_sys_clk_timer --dir=/tmp/alt8301_2962541676177955578.dir/0051_sys_clk_timer_gen/ --quartus_dir=/home/nestor/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt8301_2962541676177955578.dir/0051_sys_clk_timer_gen//niosII_sys_clk_timer_component_configuration.pl  --do_build_sim=0  ]
 Info: sys_clk_timer: Done RTL generation for module 'niosII_sys_clk_timer'
 Info: sys_clk_timer: "niosII" instantiated altera_avalon_timer "sys_clk_timer"
 Info: sys_id: "niosII" instantiated altera_avalon_sysid_qsys "sys_id"
 Info: sys_pll: "niosII" instantiated altpll "sys_pll"
 Info: uart: Starting RTL generation for module 'niosII_uart'
-Info: uart:   Generation command is [exec /home/nestor/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/nestor/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=niosII_uart --dir=/tmp/alt8293_2811719314300094481.dir/0013_uart_gen/ --quartus_dir=/home/nestor/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt8293_2811719314300094481.dir/0013_uart_gen//niosII_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: uart:   Generation command is [exec /home/nestor/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/nestor/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=niosII_uart --dir=/tmp/alt8301_2962541676177955578.dir/0055_uart_gen/ --quartus_dir=/home/nestor/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt8301_2962541676177955578.dir/0055_uart_gen//niosII_uart_component_configuration.pl  --do_build_sim=0  ]
 Info: uart: Done RTL generation for module 'niosII_uart'
 Info: uart: "niosII" instantiated altera_avalon_uart "uart"
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
@@ -149,24 +157,25 @@ Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
 Info: mm_interconnect_0: "niosII" instantiated altera_mm_interconnect "mm_interconnect_0"
 Info: irq_mapper: "niosII" instantiated altera_irq_mapper "irq_mapper"
 Info: irq_synchronizer: "niosII" instantiated altera_irq_clock_crosser "irq_synchronizer"
 Info: rst_controller: "niosII" instantiated altera_reset_controller "rst_controller"
 Info: cpu: Starting RTL generation for module 'niosII_cpu_cpu'
-Info: cpu:   Generation command is [exec /home/nestor/intelFPGA_lite/18.1/quartus/linux64//eperlcmd -I /home/nestor/intelFPGA_lite/18.1/quartus/linux64//perl/lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=niosII_cpu_cpu --dir=/tmp/alt8293_2811719314300094481.dir/0017_cpu_gen/ --quartus_bindir=/home/nestor/intelFPGA_lite/18.1/quartus/linux64/ --verilog --config=/tmp/alt8293_2811719314300094481.dir/0017_cpu_gen//niosII_cpu_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info: cpu: # 2020.01.31 21:05:43 (*) Starting Nios II generation
-Info: cpu: # 2020.01.31 21:05:43 (*)   Checking for plaintext license.
-Info: cpu: # 2020.01.31 21:05:44 (*)   Couldn't query license setup in Quartus directory /home/nestor/intelFPGA_lite/18.1/quartus/linux64/
-Info: cpu: # 2020.01.31 21:05:44 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-Info: cpu: # 2020.01.31 21:05:44 (*)   LM_LICENSE_FILE environment variable is empty
-Info: cpu: # 2020.01.31 21:05:44 (*)   Plaintext license not found.
-Info: cpu: # 2020.01.31 21:05:44 (*)   No license required to generate encrypted Nios II/e.
-Info: cpu: # 2020.01.31 21:05:44 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2020.01.31 21:05:44 (*)   Creating all objects for CPU
-Info: cpu: # 2020.01.31 21:05:45 (*)   Generating RTL from CPU objects
-Info: cpu: # 2020.01.31 21:05:45 (*)   Creating plain-text RTL
-Info: cpu: # 2020.01.31 21:05:45 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec /home/nestor/intelFPGA_lite/18.1/quartus/linux64//eperlcmd -I /home/nestor/intelFPGA_lite/18.1/quartus/linux64//perl/lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/nestor/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /home/nestor/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=niosII_cpu_cpu --dir=/tmp/alt8301_2962541676177955578.dir/0059_cpu_gen/ --quartus_bindir=/home/nestor/intelFPGA_lite/18.1/quartus/linux64/ --verilog --config=/tmp/alt8301_2962541676177955578.dir/0059_cpu_gen//niosII_cpu_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2020.02.09 16:03:25 (*) Starting Nios II generation
+Info: cpu: # 2020.02.09 16:03:25 (*)   Checking for plaintext license.
+Info: cpu: # 2020.02.09 16:03:26 (*)   Couldn't query license setup in Quartus directory /home/nestor/intelFPGA_lite/18.1/quartus/linux64/
+Info: cpu: # 2020.02.09 16:03:26 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2020.02.09 16:03:26 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2020.02.09 16:03:26 (*)   Plaintext license not found.
+Info: cpu: # 2020.02.09 16:03:26 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2020.02.09 16:03:26 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2020.02.09 16:03:26 (*)   Creating all objects for CPU
+Info: cpu: # 2020.02.09 16:03:27 (*)   Generating RTL from CPU objects
+Info: cpu: # 2020.02.09 16:03:27 (*)   Creating plain-text RTL
+Info: cpu: # 2020.02.09 16:03:27 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'niosII_cpu_cpu'
 Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
 Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
@@ -201,6 +210,6 @@ Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapt
 Info: avalon_st_adapter_009: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_009"
 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
 Info: error_adapter_0: "avalon_st_adapter_009" instantiated error_adapter "error_adapter_0"
-Info: niosII: Done "niosII" with 44 modules, 69 files
+Info: niosII: Done "niosII" with 45 modules, 70 files
 Info: qsys-generate succeeded.
 Info: Finished: Create HDL design files for synthesis

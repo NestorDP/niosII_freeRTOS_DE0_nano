@@ -13,7 +13,7 @@
    {
       datum _sortIndex
       {
-         value = "11";
+         value = "12";
          type = "int";
       }
       datum sopceditor_expanded
@@ -26,7 +26,7 @@
    {
       datum baseAddress
       {
-         value = "67117168";
+         value = "67117200";
          type = "String";
       }
    }
@@ -47,7 +47,7 @@
    {
       datum baseAddress
       {
-         value = "67117120";
+         value = "67117168";
          type = "String";
       }
    }
@@ -55,7 +55,7 @@
    {
       datum _sortIndex
       {
-         value = "10";
+         value = "11";
          type = "int";
       }
       datum sopceditor_expanded
@@ -68,7 +68,7 @@
    {
       datum baseAddress
       {
-         value = "67117184";
+         value = "67117216";
          type = "String";
       }
    }
@@ -76,7 +76,7 @@
    {
       datum _sortIndex
       {
-         value = "12";
+         value = "13";
          type = "int";
       }
       datum sopceditor_expanded
@@ -89,7 +89,7 @@
    {
       datum baseAddress
       {
-         value = "67117152";
+         value = "67117184";
          type = "String";
       }
    }
@@ -160,7 +160,7 @@
    {
       datum baseAddress
       {
-         value = "67117208";
+         value = "67117240";
          type = "String";
       }
    }
@@ -198,6 +198,22 @@
          type = "String";
       }
    }
+   element spi
+   {
+      datum _sortIndex
+      {
+         value = "15";
+         type = "int";
+      }
+   }
+   element spi.spi_control_port
+   {
+      datum baseAddress
+      {
+         value = "67117056";
+         type = "String";
+      }
+   }
    element sys_clk
    {
       datum _sortIndex
@@ -228,7 +244,7 @@
    {
       datum baseAddress
       {
-         value = "67117088";
+         value = "67117120";
          type = "String";
       }
    }
@@ -249,7 +265,7 @@
    {
       datum baseAddress
       {
-         value = "67117200";
+         value = "67117232";
          type = "String";
       }
    }
@@ -270,7 +286,7 @@
    {
       datum baseAddress
       {
-         value = "67117136";
+         value = "67117152";
          type = "String";
       }
    }
@@ -278,7 +294,7 @@
    {
       datum _sortIndex
       {
-         value = "13";
+         value = "10";
          type = "int";
       }
       datum sopceditor_expanded
@@ -291,7 +307,7 @@
    {
       datum baseAddress
       {
-         value = "67117056";
+         value = "67117088";
          type = "String";
       }
    }
@@ -341,6 +357,7 @@
  <interface name="ram_clk" internal="ram_clk.clk" type="clock" dir="start" />
  <interface name="reset" internal="clock_50.clk_in_reset" type="reset" dir="end" />
  <interface name="sdram" internal="sdram.wire" type="conduit" dir="end" />
+ <interface name="spi" internal="spi.external" type="conduit" dir="end" />
  <interface
    name="uart"
    internal="uart.external_connection"
@@ -379,7 +396,7 @@
   <parameter name="custom_direction" value="Input only" />
   <parameter name="custom_port" value="false" />
   <parameter name="edge" value="Rising" />
-  <parameter name="gpio" value="GPIO 0 (JP1)" />
+  <parameter name="gpio" value="GPIO 1 (JP2)" />
   <parameter name="irq" value="false" />
   <parameter name="irq_type" value="Edge" />
   <parameter name="leds" value="Green" />
@@ -452,7 +469,7 @@
   <parameter name="dataAddrWidth" value="27" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram.s1' start='0x2000000' end='0x4000000' type='altera_avalon_new_sdram_controller.s1' /><slave name='epcs.epcs_control_port' start='0x4001000' end='0x4001800' type='altera_avalon_epcs_flash_controller.epcs_control_port' /><slave name='cpu.debug_mem_slave' start='0x4001800' end='0x4002000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='uart.s1' start='0x4002000' end='0x4002020' type='altera_avalon_uart.s1' /><slave name='sys_clk_timer.s1' start='0x4002020' end='0x4002040' type='altera_avalon_timer.s1' /><slave name='IO_Pio.avalon_parallel_port_slave' start='0x4002040' end='0x4002050' type='altera_up_avalon_parallel_port.avalon_parallel_port_slave' /><slave name='sys_pll.pll_slave' start='0x4002050' end='0x4002060' type='altpll.pll_slave' /><slave name='Switch_Pio.avalon_parallel_port_slave' start='0x4002060' end='0x4002070' type='altera_up_avalon_parallel_port.avalon_parallel_port_slave' /><slave name='Button_Pio.avalon_parallel_port_slave' start='0x4002070' end='0x4002080' type='altera_up_avalon_parallel_port.avalon_parallel_port_slave' /><slave name='LED_Pio.avalon_parallel_port_slave' start='0x4002080' end='0x4002090' type='altera_up_avalon_parallel_port.avalon_parallel_port_slave' /><slave name='sys_id.control_slave' start='0x4002090' end='0x4002098' type='altera_avalon_sysid_qsys.control_slave' /><slave name='jtag.avalon_jtag_slave' start='0x4002098' end='0x40020A0' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram.s1' start='0x2000000' end='0x4000000' type='altera_avalon_new_sdram_controller.s1' /><slave name='epcs.epcs_control_port' start='0x4001000' end='0x4001800' type='altera_avalon_epcs_flash_controller.epcs_control_port' /><slave name='cpu.debug_mem_slave' start='0x4001800' end='0x4002000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='spi.spi_control_port' start='0x4002000' end='0x4002020' type='altera_avalon_spi.spi_control_port' /><slave name='uart.s1' start='0x4002020' end='0x4002040' type='altera_avalon_uart.s1' /><slave name='sys_clk_timer.s1' start='0x4002040' end='0x4002060' type='altera_avalon_timer.s1' /><slave name='sys_pll.pll_slave' start='0x4002060' end='0x4002070' type='altpll.pll_slave' /><slave name='IO_Pio.avalon_parallel_port_slave' start='0x4002070' end='0x4002080' type='altera_up_avalon_parallel_port.avalon_parallel_port_slave' /><slave name='Switch_Pio.avalon_parallel_port_slave' start='0x4002080' end='0x4002090' type='altera_up_avalon_parallel_port.avalon_parallel_port_slave' /><slave name='Button_Pio.avalon_parallel_port_slave' start='0x4002090' end='0x40020A0' type='altera_up_avalon_parallel_port.avalon_parallel_port_slave' /><slave name='LED_Pio.avalon_parallel_port_slave' start='0x40020A0' end='0x40020B0' type='altera_up_avalon_parallel_port.avalon_parallel_port_slave' /><slave name='sys_id.control_slave' start='0x40020B0' end='0x40020B8' type='altera_avalon_sysid_qsys.control_slave' /><slave name='jtag.avalon_jtag_slave' start='0x40020B8' end='0x40020C0' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -498,7 +515,7 @@
   <parameter name="instruction_master_high_performance_paddr_size" value="0" />
   <parameter name="instruction_master_paddr_base" value="0" />
   <parameter name="instruction_master_paddr_size" value="0" />
-  <parameter name="internalIrqMaskSystemInfo" value="15" />
+  <parameter name="internalIrqMaskSystemInfo" value="31" />
   <parameter name="io_regionbase" value="0" />
   <parameter name="io_regionsize" value="0" />
   <parameter name="master_addr_map" value="false" />
@@ -671,6 +688,22 @@
   <parameter name="refreshPeriod" value="15.625" />
   <parameter name="registerDataIn" value="true" />
   <parameter name="rowWidth" value="13" />
+ </module>
+ <module name="spi" kind="altera_avalon_spi" version="18.1" enabled="1">
+  <parameter name="avalonSpec" value="2.0" />
+  <parameter name="clockPhase" value="0" />
+  <parameter name="clockPolarity" value="0" />
+  <parameter name="dataWidth" value="8" />
+  <parameter name="disableAvalonFlowControl" value="false" />
+  <parameter name="inputClockRate" value="100000000" />
+  <parameter name="insertDelayBetweenSlaveSelectAndSClk" value="false" />
+  <parameter name="insertSync" value="false" />
+  <parameter name="lsbOrderedFirst" value="false" />
+  <parameter name="masterSPI" value="false" />
+  <parameter name="numberOfSlaves" value="1" />
+  <parameter name="syncRegDepth" value="2" />
+  <parameter name="targetClockRate" value="3125000" />
+  <parameter name="targetSlaveSelectToSClkDelay" value="0.0" />
  </module>
  <module name="sys_clk" kind="clock_source" version="18.1" enabled="1">
   <parameter name="clockFrequency" value="100000000" />
@@ -890,7 +923,7 @@
    start="cpu.data_master"
    end="jtag.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x04002098" />
+  <parameter name="baseAddress" value="0x040020b8" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -899,7 +932,7 @@
    start="cpu.data_master"
    end="LED_Pio.avalon_parallel_port_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x04002080" />
+  <parameter name="baseAddress" value="0x040020a0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -908,7 +941,7 @@
    start="cpu.data_master"
    end="Button_Pio.avalon_parallel_port_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x04002070" />
+  <parameter name="baseAddress" value="0x04002090" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -917,7 +950,7 @@
    start="cpu.data_master"
    end="Switch_Pio.avalon_parallel_port_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x04002060" />
+  <parameter name="baseAddress" value="0x04002080" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -926,7 +959,7 @@
    start="cpu.data_master"
    end="IO_Pio.avalon_parallel_port_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x04002040" />
+  <parameter name="baseAddress" value="0x04002070" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -935,7 +968,7 @@
    start="cpu.data_master"
    end="sys_id.control_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x04002090" />
+  <parameter name="baseAddress" value="0x040020b0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -962,7 +995,7 @@
    start="cpu.data_master"
    end="sys_pll.pll_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x04002050" />
+  <parameter name="baseAddress" value="0x04002060" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="avalon" version="18.1" start="cpu.data_master" end="sdram.s1">
@@ -976,10 +1009,19 @@
    start="cpu.data_master"
    end="sys_clk_timer.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x04002020" />
+  <parameter name="baseAddress" value="0x04002040" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="avalon" version="18.1" start="cpu.data_master" end="uart.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x04002020" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="cpu.data_master"
+   end="spi.spi_control_port">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x04002000" />
   <parameter name="defaultConnection" value="false" />
@@ -1028,6 +1070,7 @@
  <connection kind="clock" version="18.1" start="clock_50.clk" end="jtag.clk" />
  <connection kind="clock" version="18.1" start="sys_clk.clk" end="uart.clk" />
  <connection kind="clock" version="18.1" start="sys_clk.clk" end="IO_Pio.clk" />
+ <connection kind="clock" version="18.1" start="sys_clk.clk" end="spi.clk" />
  <connection
    kind="clock"
    version="18.1"
@@ -1048,6 +1091,9 @@
  </connection>
  <connection kind="interrupt" version="18.1" start="cpu.irq" end="uart.irq">
   <parameter name="irqNumber" value="3" />
+ </connection>
+ <connection kind="interrupt" version="18.1" start="cpu.irq" end="spi.irq">
+  <parameter name="irqNumber" value="4" />
  </connection>
  <connection
    kind="reset"
@@ -1119,6 +1165,11 @@
    version="18.1"
    start="clock_50.clk_reset"
    end="IO_Pio.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clock_50.clk_reset"
+   end="spi.reset" />
  <connection
    kind="reset"
    version="18.1"

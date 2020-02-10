@@ -42,7 +42,7 @@ module niosII_IO_Pio (
 
 	// Bidirectionals
 
-	GPIO_0,
+	GPIO_1,
 
 	// Outputs
 
@@ -72,7 +72,7 @@ input			[31: 0]	writedata;
 
 
 // Bidirectionals
-inout			[31: 0]	GPIO_0;
+inout			[31: 0]	GPIO_1;
 
 // Outputs
 
@@ -116,7 +116,7 @@ genvar					i;
 // Input Registers
 always @(posedge clk)
 begin
-	data_in <= GPIO_0;
+	data_in <= GPIO_1;
 end
 
 // Output Registers
@@ -215,7 +215,7 @@ end
 generate
 	for (i=0; i <= DW; i = i + 1)
 	begin : assign_data_out
-		assign GPIO_0[i]	= direction[i] ? data_out[i] : 1'bZ;
+		assign GPIO_1[i]	= direction[i] ? data_out[i] : 1'bZ;
 	end
 endgenerate
 

@@ -36,7 +36,8 @@ module DE0Nano_FreeRTOS(
 	EPCS_NCSO,
 
 	//////////// GPIO_0, GPIO_0 connect to GPIO Default //////////
-	GPIO_0
+	GPIO_0,
+	GPIO_1
 );
 
 //=======================================================
@@ -73,13 +74,15 @@ output		          		DRAM_RAS_N;
 output		          		DRAM_WE_N;
 
 //////////// EPCS //////////
-output		          		EPCS_ASDO;
-input 		          		EPCS_DATA0;
-output		          		EPCS_DCLK;
-output		          		EPCS_NCSO;
+output		         EPCS_ASDO;
+input 		   EPCS_DATA0;
+output		   EPCS_DCLK;
+output		   EPCS_NCSO;
 
 //////////// GPIO_0, GPIO_0 connect to GPIO Default //////////
-inout 		    [33:0]		GPIO_0;
+
+inout [33:0]   GPIO_0;
+inout [33:0]	GPIO_1;
 
 
 //=======================================================
@@ -93,28 +96,32 @@ inout 		    [33:0]		GPIO_0;
 //  Structural coding
 //=======================================================
     niosII u0 (
-        .clk_clk            (CLOCK_50),            // clk.clk
-        .epcs_dclk          (EPCS_DCLK),          	// epcs.dclk
-        .epcs_sce           (EPCS_NCSO),           // epcs.sce
-        .epcs_sdo           (EPCS_ASDO),           // epcs.sdo
-        .epcs_data0         (EPCS_DATA0),         	// epcs.data0
-        .port_led_export    (LED),    					// port_led.export
-        .port_key_export    (KEY),    					// port_key.export
-        .port_sw_export     (SW),     					// port_sw.export
-        .port_gpio_0_export (GPIO_0[31:0]), 			// port_gpio_0.export
-		  .ram_clk_clk        (DRAM_CLK),         	// ram_clk.clk
-        .reset_reset_n      (1'b1),      				// reset.reset_n	  
-        .uart_rxd           (GPIO_0[32]),          // uart.rxd
-        .uart_txd           (GPIO_0[33]),          // uart.txd
-        .sdram_addr         (DRAM_ADDR),         	// sdram.addr
-        .sdram_ba           (DRAM_BA),           	// sdram.ba
-        .sdram_cas_n        (DRAM_CAS_N),        	// sdram.cas_n
-        .sdram_cke          (DRAM_CKE),          	// sdram.cke
-        .sdram_cs_n         (DRAM_CS_N),         	// sdram.cs_n
-        .sdram_dq           (DRAM_DQ),           	// sdram.dq
-        .sdram_dqm          (DRAM_DQM),          	// sdram.dqm
-        .sdram_ras_n        (DRAM_RAS_N),        	// sdram.ras_n
-        .sdram_we_n         (DRAM_WE_N)          	// sdram.we_n
+        .clk_clk            (CLOCK_50),            //         clk.clk
+        .epcs_dclk          (EPCS_DCLK),          	//        epcs.dclk
+        .epcs_sce           (EPCS_NCSO),           //        epcs.sce
+        .epcs_sdo           (EPCS_ASDO),           //        epcs.sdo
+        .epcs_data0         (EPCS_DATA0),         	//        epcs.data0
+        .port_led_export    (LED),    					//    port_led.export
+        .port_key_export    (KEY),    					//    port_key.export
+        .port_sw_export     (SW),     					//     port_sw.export
+        .port_gpio_0_export (GPIO_1[31:0]), 			// port_gpio_0.export
+		  .ram_clk_clk        (DRAM_CLK),         	//     ram_clk.clk
+        .reset_reset_n      (1'b1),      				//       reset.reset_n	  
+        .uart_rxd           (GPIO_0[32]),          //        uart.rxd
+        .uart_txd           (GPIO_0[33]),          //        uart.txd
+        .sdram_addr         (DRAM_ADDR),         	//       sdram.addr
+        .sdram_ba           (DRAM_BA),           	//       sdram.ba
+        .sdram_cas_n        (DRAM_CAS_N),        	//       sdram.cas_n
+        .sdram_cke          (DRAM_CKE),          	//       sdram.cke
+        .sdram_cs_n         (DRAM_CS_N),         	//       sdram.cs_n
+        .sdram_dq           (DRAM_DQ),           	//       sdram.dq
+        .sdram_dqm          (DRAM_DQM),          	//       sdram.dqm
+        .sdram_ras_n        (DRAM_RAS_N),        	//       sdram.ras_n
+        .sdram_we_n         (DRAM_WE_N),         	//       sdram.we_n
+		  .spi_MISO           (GPIO_0[08]),          //         spi.MISO
+        .spi_MOSI           (GPIO_0[10]),          //         spi.MOSI
+        .spi_SCLK           (GPIO_0[12]),          //         spi.SCLK
+        .spi_SS_n           (GPIO_0[14])           //      .
     );
 	 
 
