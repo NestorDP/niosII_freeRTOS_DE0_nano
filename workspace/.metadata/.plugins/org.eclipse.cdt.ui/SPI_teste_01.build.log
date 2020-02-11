@@ -1,9 +1,9 @@
-10:58:28 **** Incremental Build of configuration Nios II for project SPI_teste_01 ****
+21:36:34 **** Incremental Build of configuration Nios II for project SPI_teste_01 ****
 make all 
 Info: Building ../SPI_teste_01_bsp/
 make --no-print-directory -C ../SPI_teste_01_bsp/
 [BSP build complete]
 [SPI_teste_01 build complete]
 
-10:58:28 Build Finished (took 180ms)
+21:36:34 Build Finished (took 111ms)
 

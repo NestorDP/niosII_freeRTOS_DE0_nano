@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'niosII'
  * SOPC Builder design path: ../../niosII.sopcinfo
  *
- * Generated: Sat Feb 08 10:57:05 BRT 2020
+ * Generated: Mon Feb 10 21:03:51 BRT 2020
  */
 
 /*
@@ -346,7 +346,7 @@
 #define SPI_PREFIX "spi_"
 #define SPI_SPAN 32
 #define SPI_SYNC_REG_DEPTH 2
-#define SPI_TARGETCLOCK 128000u
+#define SPI_TARGETCLOCK 3125000u
 #define SPI_TARGETSSDELAY "0.0"
 #define SPI_TYPE "altera_avalon_spi"
 
@@ -389,7 +389,7 @@
 #define SYS_ID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYS_ID_NAME "/dev/sys_id"
 #define SYS_ID_SPAN 8
-#define SYS_ID_TIMESTAMP 1580524731
+#define SYS_ID_TIMESTAMP 1581274994
 #define SYS_ID_TYPE "altera_avalon_sysid_qsys"
 
 

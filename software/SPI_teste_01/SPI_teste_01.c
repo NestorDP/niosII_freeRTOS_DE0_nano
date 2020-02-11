@@ -18,10 +18,55 @@
 
 #include <altera_avalon_spi.h>
 #include <altera_avalon_spi_regs.h>
+#include "system.h"
+#include "sys/alt_stdio.h"
+#include "sys/alt_irq.h"
+
+//volatile int* edge_capture_ptr;
+
+
+static void spi_ISR(void* context, alt_u32 id)
+{
+
+printf("SPI INTERRUPT DETECTED!\n");
+IOWR_ALTERA_AVALON_SPI_CONTROL(SPI_BASE, 0x0);
+
+
+//*edge_capture_ptr = (volatile int*) context;
+
+//*edge_capture_ptr = IORD_ALTERA_AVALON_SPI_RXDATA(SPI_BASE);
+
+
+//reset the interrupt flags
+
+IOWR_ALTERA_AVALON_SPI_STATUS(SPI_BASE, 0x0);
+
+
+//reset flags
+IOWR_ALTERA_AVALON_SPI_CONTROL(SPI_BASE, ALTERA_AVALON_SPI_CONTROL_SSO_MSK | ALTERA_AVALON_SPI_CONTROL_IRRDY_MSK);
+}
+
+
 
 int main()
 {
   printf("Hello from Nios II!\n");
+
+
+  //enable receive interrupt
+
+  IOWR_ALTERA_AVALON_SPI_STATUS(SPI_BASE, 0x0);
+
+
+  //reset flags
+  IOWR_ALTERA_AVALON_SPI_CONTROL(SPI_BASE, ALTERA_AVALON_SPI_CONTROL_SSO_MSK | ALTERA_AVALON_SPI_CONTROL_IRRDY_MSK);
+
+  //when status flag and control flag are both 1 interrupt occurs
+  alt_irq_register(SPI_IRQ, NULL, spi_ISR);
+
+
+  while(1);
+
 
   return 0;
 }
