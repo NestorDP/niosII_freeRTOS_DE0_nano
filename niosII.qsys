@@ -697,7 +697,7 @@
   <parameter name="disableAvalonFlowControl" value="false" />
   <parameter name="inputClockRate" value="100000000" />
   <parameter name="insertDelayBetweenSlaveSelectAndSClk" value="false" />
-  <parameter name="insertSync" value="false" />
+  <parameter name="insertSync" value="true" />
   <parameter name="lsbOrderedFirst" value="false" />
   <parameter name="masterSPI" value="false" />
   <parameter name="numberOfSlaves" value="1" />

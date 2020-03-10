@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Feb 10, 2020 9:03:50 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1581379430196</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Mar 4, 2020 10:36:09 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1583372169516</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>/home/nestor/repositorios/niosII_freeRTOS_DE0_nano/software/SPI_teste_01_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>../../niosII.sopcinfo</SopcDesignFile>

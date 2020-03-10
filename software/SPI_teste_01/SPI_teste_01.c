@@ -22,28 +22,24 @@
 #include "sys/alt_stdio.h"
 #include "sys/alt_irq.h"
 
-//volatile int* edge_capture_ptr;
-
+char edge_capture_ptr;
+alt_u32 status;
 
 static void spi_ISR(void* context, alt_u32 id)
 {
+	printf("SPI INTERRUPT DETECTED!\n");
 
-printf("SPI INTERRUPT DETECTED!\n");
-IOWR_ALTERA_AVALON_SPI_CONTROL(SPI_BASE, 0x0);
-
-
-//*edge_capture_ptr = (volatile int*) context;
-
-//*edge_capture_ptr = IORD_ALTERA_AVALON_SPI_RXDATA(SPI_BASE);
+	IOWR_ALTERA_AVALON_SPI_CONTROL(SPI_BASE, 0);
 
 
-//reset the interrupt flags
+	//*edge_capture_ptr = (volatile int*) context;
+	edge_capture_ptr = IORD_ALTERA_AVALON_SPI_RXDATA(SPI_BASE);
 
-IOWR_ALTERA_AVALON_SPI_STATUS(SPI_BASE, 0x0);
+	//reset the interrupt flags
+	IOWR_ALTERA_AVALON_SPI_STATUS(SPI_BASE, 0x10);
 
-
-//reset flags
-IOWR_ALTERA_AVALON_SPI_CONTROL(SPI_BASE, ALTERA_AVALON_SPI_CONTROL_SSO_MSK | ALTERA_AVALON_SPI_CONTROL_IRRDY_MSK);
+	//reset flags
+	IOWR_ALTERA_AVALON_SPI_CONTROL(SPI_BASE, ALTERA_AVALON_SPI_CONTROL_SSO_MSK | ALTERA_AVALON_SPI_CONTROL_IRRDY_MSK);
 }
 
 
@@ -57,7 +53,6 @@ int main()
 
   IOWR_ALTERA_AVALON_SPI_STATUS(SPI_BASE, 0x0);
 
-
   //reset flags
   IOWR_ALTERA_AVALON_SPI_CONTROL(SPI_BASE, ALTERA_AVALON_SPI_CONTROL_SSO_MSK | ALTERA_AVALON_SPI_CONTROL_IRRDY_MSK);
 
@@ -65,8 +60,16 @@ int main()
   alt_irq_register(SPI_IRQ, NULL, spi_ISR);
 
 
-  while(1);
 
+
+
+  while(1){
+	  while (!(IORD_ALTERA_AVALON_SPI_STATUS(SPI_BASE) & ALTERA_AVALON_SPI_STATUS_TRDY_MSK));
+
+	    IOWR_ALTERA_AVALON_SPI_TXDATA(SPI_BASE,'D');
+  }
 
   return 0;
 }
+
+

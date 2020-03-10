@@ -86,6 +86,9 @@ int alt_avalon_spi_command(alt_u32 base, alt_u32 slave,
     while (((status & ALTERA_AVALON_SPI_STATUS_TRDY_MSK) == 0 || credits == 0) &&
             (status & ALTERA_AVALON_SPI_STATUS_RRDY_MSK) == 0);
 
+
+
+
     if ((status & ALTERA_AVALON_SPI_STATUS_TRDY_MSK) != 0 && credits > 0)
     {
       credits--;
@@ -100,6 +103,9 @@ int alt_avalon_spi_command(alt_u32 base, alt_u32 slave,
       else
         credits = -1024;
     };
+
+
+
 
     if ((status & ALTERA_AVALON_SPI_STATUS_RRDY_MSK) != 0)
     {
@@ -116,6 +122,8 @@ int alt_avalon_spi_command(alt_u32 base, alt_u32 slave,
     }
     
   }
+
+
 
   /* Wait until the interface has finished transmitting */
   do

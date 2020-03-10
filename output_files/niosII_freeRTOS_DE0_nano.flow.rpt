@@ -1,5 +1,5 @@
 Flow report for niosII_freeRTOS_DE0_nano
-Sat Feb  8 10:54:51 2020
+Wed Mar  4 22:31:36 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Feb  8 10:54:45 2020       ;
+; Flow Status                        ; Successful - Wed Mar  4 22:31:30 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; niosII_freeRTOS_DE0_nano                    ;
 ; Top-level Entity Name              ; DE0Nano_FreeRTOS                            ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 3,817 / 22,320 ( 17 % )                     ;
-;     Total combinational functions  ; 3,111 / 22,320 ( 14 % )                     ;
-;     Dedicated logic registers      ; 2,644 / 22,320 ( 12 % )                     ;
-; Total registers                    ; 2713                                        ;
+; Total logic elements               ; 3,849 / 22,320 ( 17 % )                     ;
+;     Total combinational functions  ; 3,115 / 22,320 ( 14 % )                     ;
+;     Dedicated logic registers      ; 2,650 / 22,320 ( 12 % )                     ;
+; Total registers                    ; 2719                                        ;
 ; Total pins                         ; 126 / 154 ( 82 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 19,456 / 608,256 ( 3 % )                    ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+--------------------------+
 ; Option            ; Setting                  ;
 +-------------------+--------------------------+
-; Start date & time ; 02/08/2020 10:53:14      ;
+; Start date & time ; 03/04/2020 22:29:59      ;
 ; Main task         ; Compilation              ;
 ; Revision Name     ; niosII_freeRTOS_DE0_nano ;
 +-------------------+--------------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------------------------+--------------------------+------------------+------------+
 ; Assignment Name                     ; Value                                                    ; Default Value            ; Entity Name      ; Section Id ;
 +-------------------------------------+----------------------------------------------------------+--------------------------+------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 110073160377169.158116999321050                          ; --                       ; --               ; --         ;
+; COMPILER_SIGNATURE_ID               ; 21850362349.158337179816324                              ; --                       ; --               ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                       ; --                       ; --               ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                        ; --                       ; --               ; --         ;
 ; MISC_FILE                           ; niosII/synthesis/../niosII.cmp                           ; --                       ; --               ; --         ;
@@ -96,7 +96,7 @@ refer to the applicable agreement for further details.
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                             ; --                       ; --               ; --         ;
 ; SLD_FILE                            ; niosII/synthesis/niosII.regmap                           ; --                       ; --               ; --         ;
 ; SLD_FILE                            ; niosII/synthesis/niosII.debuginfo                        ; --                       ; --               ; --         ;
-; SLD_INFO                            ; QSYS_NAME niosII HAS_SOPCINFO 1 GENERATION_ID 1580524731 ; --                       ; niosII           ; --         ;
+; SLD_INFO                            ; QSYS_NAME niosII HAS_SOPCINFO 1 GENERATION_ID 1583371741 ; --                       ; niosII           ; --         ;
 ; SOPCINFO_FILE                       ; niosII/synthesis/../../niosII.sopcinfo                   ; --                       ; --               ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                       ; --                       ; --               ; --         ;
 ; TOP_LEVEL_ENTITY                    ; DE0Nano_FreeRTOS                                         ; niosII_freeRTOS_DE0_nano ; --               ; --         ;
@@ -108,11 +108,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:56     ; 1.0                     ; 1165 MB             ; 00:01:44                           ;
-; Fitter               ; 00:00:26     ; 1.1                     ; 1598 MB             ; 00:00:35                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 827 MB              ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.2                     ; 906 MB              ; 00:00:05                           ;
-; Total                ; 00:01:30     ; --                      ; --                  ; 00:02:27                           ;
+; Analysis & Synthesis ; 00:00:54     ; 1.0                     ; 1161 MB             ; 00:01:47                           ;
+; Fitter               ; 00:00:26     ; 1.1                     ; 1593 MB             ; 00:00:35                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 832 MB              ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.2                     ; 913 MB              ; 00:00:05                           ;
+; Total                ; 00:01:29     ; --                      ; --                  ; 00:02:30                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
